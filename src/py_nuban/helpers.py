@@ -25,3 +25,10 @@ def looks_like_phone_number(account_no: str) -> bool:
 def looks_like_moniepoint_number(account_no: str) -> bool:
     starts = ["4","5","6","8","9"]
     return str(account_no[:1]) in starts
+
+def validate_account_number(account_no: str):
+    if not isinstance(account_no, str):
+        raise TypeError("Account number must be a string")
+    if len(account_no) != 10 or not account_no.isdigit():
+        raise ValueError("Account number must be 10 digits")
+    return True

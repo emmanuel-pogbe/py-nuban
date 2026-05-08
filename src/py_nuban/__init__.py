@@ -1,4 +1,6 @@
-"""py-nuban: Nigerian bank account number validator and bank detector."""
+"""
+py-nuban: Nigerian bank account number validator and bank detector.
+"""
 
 from .main import get_possible_banks, get_set_of_possible_codes
 
