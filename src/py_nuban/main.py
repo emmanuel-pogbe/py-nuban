@@ -1,5 +1,5 @@
-import banks
-import helpers
+from . import banks
+from . import helpers
 
 def get_possible_banks(account_no: str) -> list[tuple]:
     if not isinstance(account_no, str):

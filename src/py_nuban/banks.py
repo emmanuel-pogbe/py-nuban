@@ -7,7 +7,7 @@ Manually created a popularity field for each bank for filtering purposes
 
 _banks = [
   {
-    "name": " AL-Barakah Microfinance Bank",
+    "name": "AL-Barakah Microfinance Bank",
     "slug": "al-barakah-mfb",
     "code": "090133",
     "nibss_bank_code": "090133",
