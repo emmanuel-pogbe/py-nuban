@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-nuban"
+dynamic = ["version"]
+description = "Nigerian Bank Account Number prediction. Get a list of possible Nigerian banks based on an account number"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Emmanuel Pogbe", email = "mauyonpogbe@gmail.com"}
+]
+keywords = ["nuban", "nigeria", "bank", "account-number", "fintech", "paystack", "guess-bank"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black",
+    "ruff",
+    "mypy",
+    "twine",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/emmanuel-pogbe/py-nuban"
+"Documentation" = "https://github.com/emmanuel-pogbe/py-nuban#readme"
+"Bug Tracker" = "https://github.com/emmanuel-pogbe/py-nuban/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["py_nuban*"]
+
+[tool.setuptools.package-data]
+"py_nuban" = ["*.json"]   # Important: This includes your banks.json
+
+[tool.setuptools_scm]
+write_to = "src/py_nuban/_version.py"
