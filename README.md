@@ -1,6 +1,6 @@
 # py-nuban
 
-Lightweight Python utilities to detect possible Nigerian banks for a given
+Lightweight Python utility package to detect possible Nigerian banks for a given
 Nigerian Bank Account Number. Useful for validation, or bank account suggestions in payment flows.
 
 ## Installation
@@ -73,8 +73,8 @@ print(get_possible_banks('1901880678'))
 		filter out rarely-used entries. This is a pragmatic heuristic to make
 		results more useful in real apps; it is not a guarantee of correctness.
 
-These heuristics make the library more practical in production, but they
-also introduce opinionated filtering — see the next section.
+These heuristics make the library more practical, but they
+also introduce opinionated filtering.
 
 ## Accuracy and safety notes
 
@@ -89,11 +89,7 @@ Contributions welcome. Please open an issue for data updates, bug reports,
 or feature requests. Include tests and small focused changes. Add a unit
 test under `tests/` and update documentation as needed.
 
-## Testing & CI
-
-- Run the small test harness included in `tests/test_main.py`:
-
 ## License
 
-This project is MIT licensed — see the `LICENSE` file for details.
+This project is MIT licensed, see the `LICENSE` file for details.
 
