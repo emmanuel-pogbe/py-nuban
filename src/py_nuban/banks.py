@@ -1980,7 +1980,7 @@ _banks = [
     "code": "035",
     "nibss_bank_code": "000017",
     "country": "NG",
-    "popularity": "1"
+    "popularity": "9"
   },
   {
     "name": "WetLand Micro-finance Bank",
